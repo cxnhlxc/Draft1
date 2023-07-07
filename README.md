@@ -1,2 +1,12 @@
-# Draft1
-Code for Project2
+---
+title: Project2
+emoji: 👁
+colorFrom: pink
+colorTo: pink
+sdk: streamlit
+sdk_version: 1.23.0
+app_file: main.py
+pinned: false
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
