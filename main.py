@@ -16,6 +16,8 @@ img3 = get_img_as_base64(os.path.join('images', "iamge3.jpg"))
 # img3 = get_img_as_base64(os.path.join('images', "side.PNG"))
 #deploy
 
+page_bg_img = f"""
+<style>
 [data-testid="stAppViewContainer"] > .main {{
 background-image: url("data:image/png;base64,{img5}");
 background-size: 110%;
@@ -23,17 +25,6 @@ background-position: center;
 background-repeat: no-repeat;
 background-attachment: local;
 }}
-
-[data-testid="stSidebar"] > div:first-child {{
-background-image: url("data:image/png;base64,{img3}");
-background-size: 500%;
-background-position: middle;
-background-repeat: no-repeat;
-background-attachment: local;
-}}
-
-page_bg_img = f"""
-<style>
 
 [id="tabs-bui3-tab-0"]{{
 background-color: rgba(0, 0, 0, 0);
@@ -61,6 +52,14 @@ background-color: rgba(0, 0, 0, 0);
 
 [id="tabs-bui3-tab-6"]{{
 background-color: rgba(0, 0, 0, 0);
+}}
+
+[data-testid="stSidebar"] > div:first-child {{
+background-image: url("data:image/png;base64,{img3}");
+background-size: 500%;
+background-position: middle;
+background-repeat: no-repeat;
+background-attachment: local;
 }}
 
 [data-testid="stHeader"] {{
