@@ -12,7 +12,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 img5 = get_img_as_base64(os.path.join('images', "image5.jpg"))
-img3 = get_img_as_base64(os.path.join('images', "iamge3.jpg"))
+img3 = get_img_as_base64(os.path.join('images', "image3.jpg"))
 # img3 = get_img_as_base64(os.path.join('images', "side.PNG"))
 #deploy
 
