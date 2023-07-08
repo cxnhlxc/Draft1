@@ -15,6 +15,8 @@ img5 = get_img_as_base64(os.path.join('images', "image5.jpg"))
 img3 = get_img_as_base64(os.path.join('images', "image3.jpg"))
 # #deploy
 
+page_bg_img = f"""
+<style>
 [data-testid="stAppViewContainer"] > .main {{
 background-image: url("data:image/png;base64,{img5}");
 background-size: 110%;
@@ -30,9 +32,6 @@ background-position: middle;
 background-repeat: no-repeat;
 background-attachment: local;
 }}
-
-page_bg_img = f"""
-<style>
 
 [id="tabs-bui3-tab-0"]{{
 background-color: rgba(0, 0, 0, 0);
