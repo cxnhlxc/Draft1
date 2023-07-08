@@ -1,4 +1,4 @@
-# import base64
+import base64
 # from tkinter import font
 # from turtle import width
 import streamlit as st
