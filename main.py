@@ -1,7 +1,8 @@
-import base64
-from tkinter import font
-from turtle import width
+# import base64
+# from tkinter import font
+# from turtle import width
 import streamlit as st
+from streamlit import components
 st.set_page_config(layout="wide",initial_sidebar_state="collapsed")
 import os
 
