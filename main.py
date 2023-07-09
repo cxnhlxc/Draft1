@@ -559,7 +559,7 @@ background-attachment: local;
             fig.update_traces(showlegend=False)
             st.plotly_chart(fig)
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">BOXPLOT ILLUSTRATES THE PRICE OF TRANSPORTATIONS</span>', unsafe_allow_html=True)
-            st.write('The following boxplot illustrates various modes of transportation/types of accommodation and their popularity among tourists/travelers.'
+            st.write('The following boxplot illustrates various modes of transportation/types of accommodation and their popularity among tourists/travelers.')
 
         # with col1:
         #     small_data = df[['TransportationType']]
