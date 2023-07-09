@@ -475,7 +475,7 @@ background-attachment: local;
                               yaxis=dict(title="",title_font=dict(family="SVN-Gilroy",size=14)),
                               legend=dict(title="COUNTRIES",title_font=dict(family="SVN-Gilroy",size=14),
                                           font=dict(family="SVN-Gilroy",size=14)),font=dict(family="SVN-Gilroy",size=14),
-                              width=500, height=500, paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)')
+                              width=600, height=500, paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)')
             fig.update_traces(marker=dict(line=dict(color='black', width=1.5)))
             st.plotly_chart(fig)
             # st.markdown('*Revenue By Departure Country*')
