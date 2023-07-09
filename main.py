@@ -529,6 +529,7 @@ background-attachment: local;
             # st.markdown(' - The spread of durations and how it relates to total costs and age.')
             # st.markdown(' - Any potential patterns or clusters of data points based on the variables.')
             # st.markdown(' - The concentration or dispersion of data points in different regions of the plot, indicating relationships or trends.')
+            st.write('')  
             st.write('This 3D plot provides insight into the spread of durations and how it relates to total cost and ages. Here we can observe potential patterns, indicated by the plot’s many clusters of data points.')
     # display dataframe + pie transportation
     with tab3:
