@@ -493,7 +493,7 @@ background-attachment: local;
             fig = go.Figure(go.Funnel(
             y = ["Total Customers", "First Time", "Second Time", "Third Time", "Fourth Time","Sixth Time"],
             x = [109, 95, 8, 2, 2, 2],
-            textposition = ["inside","inside","inside","outside","outside","outside"]
+            textposition = ["inside","inside","inside","outside","outside","outside"],
             textinfo = "value+percent initial",
             opacity = 0.65, marker = {"color": ["deepskyblue", "lightsalmon", "tan", "teal", "silver"],
             "line": {"width": [4, 2, 2, 3, 1, 1], "color": ["wheat", "wheat", "blue", "wheat", "wheat"]}},
