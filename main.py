@@ -536,7 +536,7 @@ background-attachment: local;
         st.markdown('<span style="font-family: SVN-Gilroy; font-size: 32px; font-weight: bold;">ACCOMMODATION/TRANSPORTATION</span>', unsafe_allow_html=True)
         col1, col2= st.columns([0.54, 0.46], gap="small")
         with col1:
-            fig = px.box(df, x='AccommodationType', y='AccommodationCost', color='AccommodationType', color_discrete_sequence=px.colors.qualitative.Prism, =500, height=500)
+            fig = px.box(df, x='AccommodationType', y='AccommodationCost', color='AccommodationType', color_discrete_sequence=px.colors.qualitative.Prism, =500, height=500),
             fig.update_layout(title= {'text':'','font':{'family':'SVN-Gilroy','size':20}},
                               xaxis=dict(title="<b>TYPES OF ACCOMMODATION</b>",title_font=dict(family="SVN-Gilroy",size=14)),
                               yaxis=dict(title="<b>COST OF ACCOMMODATION</b>",title_font=dict(family="SVN-Gilroy",size=14)),
