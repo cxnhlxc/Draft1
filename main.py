@@ -778,4 +778,4 @@ background-attachment: local;
 #         st.plotly_chart(fig)
 
 #     # Scatterplot
-#     # with tab7:
+#     # with tab7
