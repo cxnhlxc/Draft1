@@ -441,7 +441,8 @@ background-attachment: local;
                               legend=dict(title="",
                                           title_font=dict(family="SVN-Gilroy",size=14),font=dict(family="SVN-Gilroy",size=14)),
                               font=dict(family="SVN-Gilroy",size=14), 
-                              width=500, height=500)
+                              width=500, height=500,
+                              paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)')
             fig.update_layout(legend=dict(orientation="h",
                                           entrywidth=80,
                                           yanchor="bottom",
@@ -479,7 +480,7 @@ background-attachment: local;
             st.plotly_chart(fig)
             # st.markdown('*Revenue By Departure Country*')
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">REVENUE BY DEPARTURE COUNTRY</span>', unsafe_allow_html=True)
-            fig.update_layout(title= {'text':'REVENUE BY DEPARTURE COUNTRY','font':{'family':'SVN-Gilroy','size':20}},xaxis=dict(title="",title_font=dict(family="SVN-Gilroy",size=14)),yaxis=dict(title="",title_font=dict(family="SVN-Gilroy",size=14)),legend=dict(title="COUNTRIES",title_font=dict(family="SVN-Gilroy",size=14),font=dict(family="SVN-Gilroy",size=14)),font=dict(family="SVN-Gilroy",size=14))
+            fig.update_layout(title= {'text':'REVENUE BY DEPARTURE COUNTRY','font':{'family':'SVN-Gilroy','size':20}},xaxis=dict(title="",title_font=dict(family="SVN-Gilroy",size=14)),yaxis=dict(title="",title_font=dict(family="SVN-Gilroy",size=14)),legend=dict(title="COUNTRIES",title_font=dict(family="SVN-Gilroy",size=14),font=dict(family="SVN-Gilroy",size=14)),font=dict(family="SVN-Gilroy",size=14),paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)')
             st.write('The following pie chart displays different shares of departure revenue that top tourist countries receive throughout the observed period.')
        
 
@@ -503,7 +504,8 @@ background-attachment: local;
                               yaxis=dict(title="",title_font=dict(family="SVN-Gilroy",size=14)),
                               legend=dict(title="GENDER",title_font=dict(family="SVN-Gilroy",size=14),
                                           font=dict(family="SVN-Gilroy",size=14)),
-                              width=500, height=500)
+                              width=500, height=500,
+                              paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)')
             # fig.update_layout(width=930, height=620)
             st.plotly_chart(fig)
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">FUNNEL CHART ILLUSTRATES THE NUMBER OF CUSTOMERS USING THE SERVICE</span>', unsafe_allow_html=True)
@@ -519,7 +521,8 @@ background-attachment: local;
             fig.update_layout(title= {'text':'','font':{'family':'SVN-Gilroy','size':20}},
                               legend=dict(title="GENDER",title_font=dict(family="SVN-Gilroy",size=14),font=dict(family="SVN-Gilroy",size=14)),
                               font=dict(family="SVN-Gilroy",size=14), 
-                              width=500, height=500)
+                              width=500, height=500,
+                              paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)')
             st.plotly_chart(fig)
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">TRAVEL INSIGHTS DURATION, TOTAL COST, AND AGE ANALYSIS</span>', unsafe_allow_html=True)
             # st.markdown(' - The spread of durations and how it relates to total costs and age.')
@@ -539,7 +542,8 @@ background-attachment: local;
                               font=dict(family="SVN-Gilroy",size=14),
                               paper_bgcolor='rgba(255, 255, 255, 0)',
                               plot_bgcolor='rgba(255, 255, 255, 0.1)',
-                              width=500, height=500)
+                              width=500, height=500,
+                              paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)',)
             fig.update_traces(showlegend=False)
             st.plotly_chart(fig)
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">BOXPLOT ILLUSTRATES THE PRICE OF ACCOMMODATIONS</span>', unsafe_allow_html=True)
@@ -551,7 +555,8 @@ background-attachment: local;
                               yaxis=dict(title="<b>COST OF TRANSPORTATION</b>",title_font=dict(family="SVN-Gilroy",size=14)),
                               legend=dict(title="GENDER",title_font=dict(family="SVN-Gilroy", size=14),font=dict(family="SVN-Gilroy",size=14)),
                               font=dict(family="SVN-Gilroy",size=14),paper_bgcolor='rgba(255, 255, 255, 0)',plot_bgcolor='rgba(255, 255, 255, 0.1)',
-                              width=500, height=500)
+                              width=500, height=500,
+                              paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)')
             fig.update_traces(showlegend=False)
             st.plotly_chart(fig)
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">BOXPLOT ILLUSTRATES THE PRICE OF TRANSPORTATIONS</span>', unsafe_allow_html=True)
