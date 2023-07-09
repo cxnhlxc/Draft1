@@ -546,7 +546,8 @@ background-attachment: local;
             fig.update_traces(showlegend=False)
             st.plotly_chart(fig)
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">BOXPLOT ILLUSTRATES THE PRICE OF ACCOMMODATIONS</span>', unsafe_allow_html=True)
-        
+            st.write('The following boxplot illustrates various modes of accommodation/types of accommodation and their popularity among tourists/travelers.')
+          
         with col2:
             fig = px.box(df, x='TransportationType', y='TransportationCost', color='TransportationType', color_discrete_sequence=px.colors.qualitative.Prism, width=930, height=620)
             fig.update_layout(title= {'text':'','font':{'family':'SVN-Gilroy','size':20}},
@@ -558,8 +559,7 @@ background-attachment: local;
             fig.update_traces(showlegend=False)
             st.plotly_chart(fig)
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">BOXPLOT ILLUSTRATES THE PRICE OF TRANSPORTATIONS</span>', unsafe_allow_html=True)
-        st.write('The following pie chart illustrates various modes of transportation/types of accommodation and their popularity among tourists/travelers.')
-
+            st.write('The following boxplot illustrates various modes of transportation/types of accommodation and their popularity among tourists/travelers.'
 
         # with col1:
         #     small_data = df[['TransportationType']]
