@@ -13,7 +13,7 @@ def get_img_as_base64(file):
 
 img5 = get_img_as_base64(os.path.join('images', "image5.jpg"))
 img3 = get_img_as_base64(os.path.join('images', "image3.jpg"))
-img6 = get_img_as_base64(os.path.join('images', "image6.jpg"))
+# img6 = get_img_as_base64(os.path.join('images', "image6.jpg"))
 #deploy
 
 page_bg_img = f"""
@@ -232,7 +232,7 @@ if st.session_state.clicked:
     page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("data:image/png;base64,{img6}");
+background-image: url("data:image/png;base64,{img3}");
 background-size: 240%;
 background-position: top-left;
 background-repeat: no-repeat;
