@@ -543,7 +543,7 @@ background-attachment: local;
                               paper_bgcolor='rgba(255, 255, 255, 0)',
                               plot_bgcolor='rgba(255, 255, 255, 0.1)',
                               width=500, height=500,
-                              paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)',)
+                              paper_bgcolor='rgba(255, 255, 255, 0)', plot_bgcolor='rgba(255, 255, 255, 0)')
             fig.update_traces(showlegend=False)
             st.plotly_chart(fig)
             st.markdown('<span style="font-family: SVN-Gilroy; font-size: 20px; font-weight: bold;">BOXPLOT ILLUSTRATES THE PRICE OF ACCOMMODATIONS</span>', unsafe_allow_html=True)
