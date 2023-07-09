@@ -468,7 +468,7 @@ background-attachment: local;
             f = r[r['Revenue'] >= threshold]
             f = f.append({'DepartureCountry': 'Other',
                           'Revenue': r[r['Revenue'] < threshold]['Revenue'].sum()}, ignore_index=True)
-            fig = px.pie(f, values='Revenue', names='DepartureCountry', width=660, height=440)    
+            fig = px.pie(f, values='Revenue', names='DepartureCountry', width=600, height=500)    
             fig.update_layout(showlegend=True,
                               title= {'text':'','font':{'family':'SVN-Gilroy','size':20}},
                               xaxis=dict(title="",title_font=dict(family="SVN-Gilroy",size=14)),
@@ -536,7 +536,7 @@ background-attachment: local;
         st.markdown('<span style="font-family: SVN-Gilroy; font-size: 32px; font-weight: bold;">ACCOMMODATION/TRANSPORTATION</span>', unsafe_allow_html=True)
         col1, col2= st.columns([0.54, 0.46], gap="small")
         with col1:
-            fig = px.box(df, x='AccommodationType', y='AccommodationCost', color='AccommodationType', color_discrete_sequence=px.colors.qualitative.Prism, width=930, height=620)
+            fig = px.box(df, x='AccommodationType', y='AccommodationCost', color='AccommodationType', color_discrete_sequence=px.colors.qualitative.Prism, =500, height=500)
             fig.update_layout(title= {'text':'','font':{'family':'SVN-Gilroy','size':20}},
                               xaxis=dict(title="<b>TYPES OF ACCOMMODATION</b>",title_font=dict(family="SVN-Gilroy",size=14)),
                               yaxis=dict(title="<b>COST OF ACCOMMODATION</b>",title_font=dict(family="SVN-Gilroy",size=14)),
@@ -551,7 +551,7 @@ background-attachment: local;
             st.write('The following boxplot illustrates various modes of accommodation/types of accommodation and their popularity among tourists/travelers.')
           
         with col2:
-            fig = px.box(df, x='TransportationType', y='TransportationCost', color='TransportationType', color_discrete_sequence=px.colors.qualitative.Prism, width=930, height=620)
+            fig = px.box(df, x='TransportationType', y='TransportationCost', color='TransportationType', color_discrete_sequence=px.colors.qualitative.Prism, width=500, height=500)
             fig.update_layout(title= {'text':'','font':{'family':'SVN-Gilroy','size':20}},
                               xaxis=dict(title="<b>TYPES OF TRANSPORTATION</b>",title_font=dict(family="SVN-Gilroy", size=14)),
                               yaxis=dict(title="<b>COST OF TRANSPORTATION</b>",title_font=dict(family="SVN-Gilroy",size=14)),
@@ -570,7 +570,7 @@ background-attachment: local;
         #     gg = small_data.groupby(['TransportationType']).size().reset_index(name='count')
         #     # print(gg)
 
-        #     fig = px.pie(gg,values="count", names='TransportationType', color_discrete_sequence=['rgb(250, 112, 112)','rgb(161, 194, 152)','rgb(198, 235, 197)','rgb(251, 242, 207)','rgb(165, 241, 233)','rgb(127, 188, 210)'], width=660, height=440)
+        #     fig = px.pie(gg,values="count", names='TransportationType', color_discrete_sequence=['rgb(250, 112, 112)','rgb(161, 194, 152)','rgb(198, 235, 197)','rgb(251, 242, 207)','rgb(165, 241, 233)','rgb(127, 188, 210)'], width=500, height=500)
         #     fig.update_traces(marker_line_color='rgb(0,0,0)', marker_line_width=1.5, opacity=0.8)
         #     fig.update_layout(title= {'text':'','font':{'family':'SVN-Gilroy','size':20}},
         #                       legend=dict(title="TRANSPORTATION TYPE",title_font=dict(family="SVN-Gilroy",size=14),font=dict(family="SVN-Gilroy",size=13)),
